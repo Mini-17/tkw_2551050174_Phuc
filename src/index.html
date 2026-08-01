@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>GaraMaster - Quản lý Gara Ô tô</title>
+    <!-- Link file CSS đã biên dịch từ Tailwind -->
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-    <h1 class="font-display text-brand-600">Garage AutoCare Master</h1>
+
+    <a href="#main">Bỏ qua đến nội dung chính</a>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav aria-label="Điều hướng chính">
+            <a href="#">GaraMaster</a>
+            <ul>
+                <li><a href="#tinh-nang">Tính năng</a></li>
+                <li><a href="#bang-gia">Bảng giá</a></li>
+            </ul>
+            <div>
+                <button type="button">Đăng nhập</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section aria-labelledby="hero-title">
+            <h1 id="hero-title">Quản lý Gara Ô tô Dễ Dàng</h1>
+            <p>Tối ưu quy trình và tiết kiệm thời gian.</p>
+            <a href="#cta">Dùng thử ngay</a>
+        </section>
+
+        <!-- LOGO KHÁCH HÀNG -->
+        <section aria-labelledby="doi-tac-title">
+            <h2 id="doi-tac-title">Đối tác</h2>
+            <ul>
+                <li><img src="assets/logo1.png" alt="Toyota"></li>
+                <li><img src="assets/logo2.png" alt="Honda"></li>
+            </ul>
+        </section>
+
+        <!-- TÍNH NĂNG -->
+        <section id="tinh-nang" aria-labelledby="tinh-nang-title">
+            <h2 id="tinh-nang-title">Tính năng</h2>
+            <ul>
+                <li>
+                    <h3>Tiếp nhận xe</h3>
+                    <p>Tạo đơn nhanh chóng.</p>
+                </li>
+                <li>
+                    <h3>Quản lý kho</h3>
+                    <p>Kiểm soát phụ tùng.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SỐ LIỆU -->
+        <section aria-labelledby="so-lieu-title">
+            <h2 id="so-lieu-title">Con số ấn tượng</h2>
+            <ul>
+                <li><h3>1000+</h3><p>Khách hàng</p></li>
+                <li><h3>99%</h3><p>Hài lòng</p></li>
+            </ul>
+        </section>
+
+        <!-- BẢNG GIÁ -->
+        <section id="bang-gia" aria-labelledby="bang-gia-title">
+            <h2 id="bang-gia-title">Bảng giá</h2>
+            <ul>
+                <li>
+                    <h3>Gói Cơ Bản</h3>
+                    <p>500.000đ/tháng</p>
+                    <a href="#cta">Chọn gói</a>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- CALL TO ACTION -->
+        <section id="cta" aria-labelledby="cta-title">
+            <h2 id="cta-title">Sẵn sàng chuẩn hóa gara của bạn?</h2>
+            <p>Đăng ký ngay hôm nay để nhận ưu đãi giảm 20% cho gói năm.</p>
+            <a href="#">Đăng ký dùng thử 14 ngày</a>
+            <button type="button">Liên hệ tư vấn</button>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <section aria-labelledby="footer-title">
+            <h2 id="footer-title">GaraMaster</h2>
+            <p>&copy; 2026 GaraMaster</p>
+        </section>
+    </footer>
+
 </body>
 </html>

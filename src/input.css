@@ -7,10 +7,10 @@
 @theme {
   /* Màu sắc giao diện web */
   --color-brand-600: #1e3a8a;   /* Xanh Navy */
-  --color-accent-500: #f97316;  /* Cam nhấn (sửa chữa/cảnh báo) */
-  --color-ink: #0f172a;         /* Màu chữ chính (Đen xám) */
-  --color-muted: #64748b;       /* Màu chữ phụ (Xám) */
-  --color-surface: #f8fafc;     /* Màu nền trang (Xám nhẹ) */
+  --color-accent-500: #f97316;  /* Cam nhấn: sửa chữa,cảnh báo */
+  --color-ink: #0f172a;         /* Màu chữ chính: Đen xám */
+  --color-muted: #64748b;       /* Màu chữ phụ: Xám */
+  --color-surface: #f8fafc;     /* Màu nền trang: Xám nhẹ */
   --color-line: #e2e8f0;        /* Màu đường viền */
 
   /* Phông chữ */
@@ -18,5 +18,19 @@
   --font-body: "Inter", system-ui, sans-serif;
 
   /* Bo góc */
-  --radius-card: 0.875rem;      /* ~14px */
+  --radius-card: 0.875rem;
+}
+
+/* Khai báo container dùng chung cho các section */
+.section { 
+  @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28; 
+}
+
+/* Khai báo component nút bấm */
+.btn { 
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors; 
+}
+
+.btn-primary { 
+  @apply bg-brand-600 text-white hover:bg-brand-700; 
 }
