@@ -17,9 +17,9 @@ mục đích:
 # giao diện Web
 
 - Vai trò | Giá trị trong Figma | Tên token của tôi | Class Tailwind
-- Màu thương hiệu chính #1E3A8A | --color-brand-600 | bg-brand-600
+- Màu thương hiệu chính #1e3a8a | --color-brand-600 | bg-brand-600
 - Màu nhấn | #F97316 | --color-accent-500 | text-accent-500
-- Chữ chính | #0F172A | --color-ink | text-ink
+- Chữ chính | #ffffff | --color-ink | text-ink
 - Chữ phụ | #64748B | --color-muted | text-muted
 - Nền trang | #F8FAFC | --color-surface | bg-surface
 - Viền | #E2E8F0 | --color-line | border-line
