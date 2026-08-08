@@ -9,12 +9,12 @@
   --color-brand-600: #1e3a8a;   /* Xanh Navy */
   --color-accent-500: #f97316;  /* Cam nhấn: sửa chữa,cảnh báo */
   --color-ink: #ffffff;         /* Màu chữ chính: Trắng */
-  --color-muted: #64748b;       /* Màu chữ phụ: Xám */
+  --color-muted: #d5dae2;       /* Màu chữ phụ: Xám */
   --color-surface: #5083a7;     /* Màu nền trang: Xám nhẹ */
   --color-line: #e2e8f0;        /* Màu đường viền */
 
   /* Phông chữ */
-  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-display: "Bebas Neue", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
   /* Bo góc */
@@ -45,5 +45,36 @@
 
   .btn-outline {
     @apply border border-line text-ink hover:bg-surface;
+  }
+
+.glass-nav {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+.glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08); 
+  }
+  .glass-card-hover:hover {
+    border-color: rgba(249, 115, 22, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.15);
+    transform: translateY(-2px);
+  }
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f97316;
   }
 }

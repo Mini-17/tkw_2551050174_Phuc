@@ -20,11 +20,11 @@ mục đích:
 - Màu thương hiệu chính #1e3a8a | --color-brand-600 | bg-brand-600
 - Màu nhấn | #F97316 | --color-accent-500 | text-accent-500
 - Chữ chính | #ffffff | --color-ink | text-ink
-- Chữ phụ | #64748B | --color-muted | text-muted
+- Chữ phụ | #d5dae2 | --color-muted | text-muted
 - Nền trang | #F8FAFC | --color-surface | bg-surface
 - Viền | #E2E8F0 | --color-line | border-line
-- Phông tiêu đề | Sans-serif | --font-display | font-display
-- Phông nội dung | Sans-serif | --font-body | font-body
+- Phông tiêu đề | Bebas Neue | --font-display | font-display
+- Phông nội dung | Bebas Neue | --font-body | font-body
 - H1/H2/H3 | 48px / 36px / 24px | Scale Tailwind |text-5xl/text-3xl|text-xl
 - Padding dọc section | 96px | Scale Tailwind | py-24
 - Bo góc thẻ | 14px-0.875rem | --radius-card | rounded-card
