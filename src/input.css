@@ -51,7 +51,7 @@
 
  
 
-  /* Button General Standard */
+  /* Button General */
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-card px-5 py-2.5 text-sm font-semibold transition-all cursor-pointer;
   }
