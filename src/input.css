@@ -1,4 +1,4 @@
-@import "tailwindcss";
+import "tailwindcss";
 
 /* Cấu hình hỗ trợ Dark Mode */
 @custom-variant dark (&:where(.dark, .dark *));
@@ -7,7 +7,8 @@
 @theme {
   /* Màu sắc giao diện web */
   --color-brand-600: #1e3a8a;   /* Xanh Navy */
-  --color-accent-500: #f97316;  /* Cam nhấn: sửa chữa,cảnh báo */
+  --color-accent-500: #f97316;  /* Cam nhấn: sửa chữa, cảnh báo */
+  --color-accent-600: #ea580c;  /* Cam đậm hơn cho hiệu ứng hover */
   --color-ink: #ffffff;         /* Màu chữ chính: Trắng */
   --color-muted: #d5dae2;       /* Màu chữ phụ: Xám */
   --color-surface: #5083a7;     /* Màu nền trang: Xám nhẹ */
@@ -22,6 +23,7 @@
 }
 
 @layer components {
+  /* Layout & Sections General */
   .section {
     @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
   }
@@ -30,40 +32,62 @@
     @apply font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
   }
 
-
-  .nav_container {
-    @apply hover:text-brand-600;
+  /* Navigation Links */
+  .nav-link {
+    @apply hover:text-accent-500 transition-colors;
   }
 
+  .nav_mobile_text{
+    @apply text-sm font-medium text-slate-200 hover:text-accent-500 transition-colors;
+  }
+
+  /* Button General Standard */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors cursor-pointer;
+    @apply inline-flex items-center justify-center gap-2 rounded-card px-5 py-2.5 text-sm font-semibold transition-all cursor-pointer;
   }
 
   .btn-primary {
-    @apply bg-brand-600 text-white hover:bg-blue-900;
+    @apply bg-accent-500 text-white font-bold hover:bg-accent-600 shadow-lg shadow-accent-500/25 hover:scale-105;
   }
 
   .btn-outline {
-    @apply border border-line text-ink hover:bg-surface;
+    @apply border border-slate-700 hover:border-slate-500 bg-slate-800/50 text-slate-200 hover:text-white font-semibold;
   }
 
-.glass-nav {
+  /* Hero & Feature Card Components */
+  .highlight-card {
+    @apply p-3.5 rounded-card bg-slate-900/80 border border-slate-800 text-left;
+  }
+
+  .stat-card {
+    @apply p-4 rounded-card bg-slate-900/90 border border-slate-800;
+  }
+
+  .progress-bar-bg {
+    @apply w-full h-2 rounded-full bg-slate-800 overflow-hidden;
+  }
+
+  /* Glassmorphism Styling */
+  .glass-nav {
     background: rgba(15, 23, 42, 0.75);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
   }
-.glass-card {
+
+  .glass-card {
     background: rgba(30, 41, 59, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08); 
   }
+
   .glass-card-hover:hover {
     border-color: rgba(249, 115, 22, 0.4);
     box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.15);
     transform: translateY(-2px);
   }
-  /* Custom scrollbar */
+
+  /* Custom Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
