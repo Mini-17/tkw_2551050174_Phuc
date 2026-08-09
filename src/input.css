@@ -1,4 +1,4 @@
-import "tailwindcss";
+@import "tailwindcss";
 
 /* Cấu hình hỗ trợ Dark Mode */
 @custom-variant dark (&:where(.dark, .dark *));
