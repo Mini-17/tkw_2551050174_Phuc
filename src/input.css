@@ -37,9 +37,15 @@
     @apply hover:text-accent-500 transition-colors;
   }
 
+ .nav_desktop_link{
+    @apply text-sm font-medium text-slate-200 hover:text-accent-500 transition-colors;
+  }
+
   .nav_mobile_text{
     @apply text-sm font-medium text-slate-200 hover:text-accent-500 transition-colors;
   }
+
+ 
 
   /* Button General Standard */
   .btn {
