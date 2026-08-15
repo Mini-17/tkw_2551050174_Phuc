@@ -111,8 +111,7 @@
   }
 
    /* MAIN SECTION */
-
-   /* Main Setion test */
+   /* Main Setion text */
    .sec-text{
     @apply text-accent-500 font-bold text-xs uppercase tracking-widest block mb-2;
    }
@@ -127,11 +126,71 @@
 
 
   /* Section 2 */
-  
   /*border role*/
    .bd-rl{
     @apply p-6 rounded-card flex flex-col justify-between;
    }
 
+   .bd-rl-hl{
+    @apply p-6 flex flex-col justify-between border-accent-500/40;
+   }
+
+   /*Text role*/
+   .Num{
+    @apply text-2xl text-accent-500 mb-2 block;
+   }
+
+   .T-Role{
+    @apply font-display text-2xl text-ink mb-2;
+   }
+
+   .T-RoleInfo{
+    @apply text-xs text-muted leading-relaxed;
+   }
+
+   .T-lists{
+    @apply text-xs text-slate-300 space-y-2 pt-4 border-t border-line mt-4;
+   }
+
+   /* Section 3 */
+   /*border role*/
+   .Bd-Steps{
+    @apply p-6 space-y-3;
+   }
+
+   /*Text role*/
+    .T-Steps{
+      @apply text-3xl text-accent-500;
+    }
+
+    .T-StepsInfo{
+      @apply text-xl text-ink;
+    }
+
+    /* Section 6 */
+    /*feature card*/
+    .Feat-Card{
+      @apply p-6 space-y-2 rounded-card;
+    }
+
+    /*Text cards*/
+    .T-FeatMain{
+      @apply text-xl text-ink block;
+    }
+
+    .T-FeatInfo{
+      @apply text-xs text-muted leading-relaxed;
+    }
+
+    /* Section 7 */
+    /*border role*/
+    .Bd-KPIs{
+      @apply p-4 bg-slate-900 border border-line rounded-card;
+    }
+
+    /*Text role*/
+    .T-KPIs{
+      @apply text-xs text-muted mb-1;
+    }
 
 }
