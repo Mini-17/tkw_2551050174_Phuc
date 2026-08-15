@@ -11,7 +11,7 @@
   --color-accent-600: #ea580c;  /* Cam đậm hơn cho hiệu ứng hover */
   --color-ink: #ffffff;         /* Màu chữ chính: Trắng */
   --color-muted: #d5dae2;       /* Màu chữ phụ: Xám */
-  --color-surface: #5083a7;     /* Màu nền trang: Xám nhẹ */
+  --color-surface: #0f172a;     /* Màu nền trang: Xám nhẹ */
   --color-line: #e2e8f0;        /* Màu đường viền */
 
   /* Phông chữ */
@@ -20,6 +20,23 @@
 
   /* Bo góc */
   --radius-card: 0.875rem;
+}
+
+@layer base {
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f97316;
+  }
 }
 
 @layer components {
@@ -100,18 +117,22 @@
     transform: translateY(-2px);
   }
 
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #0f172a;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #334155;
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #f97316;
-  }
+   /* MAIN SECTION */
+
+   /* Main Setion test */
+   .sec-text{
+    @apply text-accent-500 font-bold text-xs uppercase tracking-widest block mb-2;
+   }
+
+   .sec-textmid{
+    @apply font-display text-4xl sm:text-5xl uppercase text-ink;
+   }
+
+   .sec-textInfo{
+    @apply text-muted text-sm mt-3;
+   }
+
+
+  /* Section 2 */
+
 }
