@@ -77,6 +77,11 @@
     @apply w-full h-2 rounded-full bg-slate-800 overflow-hidden;
   }
 
+  /* Bảng giái SaaS */
+  .Tieude_goi{
+    @apply text-2xl font-bold text-slate-200 mb-4;
+  }
+ 
   /* Glassmorphism */
   .glass-nav {
     background: rgba(15, 23, 42, 0.75);
