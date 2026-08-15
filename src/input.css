@@ -98,23 +98,16 @@
   }
  
   /* Glassmorphism */
-  .glass-nav {
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+ .glass-nav {
+    @apply bg-slate-900/75 backdrop-blur-md;
   }
 
   .glass-card {
-    background: rgba(30, 41, 59, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08); 
+    @apply bg-slate-800/70 backdrop-blur-md border border-white/[0.08];
   }
 
-  .glass-card-hover:hover {
-    border-color: rgba(249, 115, 22, 0.4);
-    box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.15);
-    transform: translateY(-2px);
+  .glass-card-hover {
+    @apply transition-all duration-300 hover:border-orange-500/40 hover:shadow-[0_10px_30px_-10px_rgba(249,115,22,0.15)] hover:-translate-y-0.5;
   }
 
    /* MAIN SECTION */
@@ -134,5 +127,11 @@
 
 
   /* Section 2 */
+  
+  /*border role*/
+   .bd-rl{
+    @apply p-6 rounded-card flex flex-col justify-between;
+   }
+
 
 }
