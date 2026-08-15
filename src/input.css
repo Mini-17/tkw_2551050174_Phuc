@@ -49,9 +49,7 @@
     @apply text-sm font-medium text-slate-200 hover:text-accent-500 transition-colors;
   }
 
- 
-
-  /* Button General Standard */
+  /* Button General */
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-card px-5 py-2.5 text-sm font-semibold transition-all cursor-pointer;
   }
@@ -77,6 +75,11 @@
     @apply w-full h-2 rounded-full bg-slate-800 overflow-hidden;
   }
 
+  /* Bảng giái SaaS */
+  .Tieude_goi{
+    @apply text-2xl font-bold text-slate-200 mb-4;
+  }
+ 
   /* Glassmorphism */
   .glass-nav {
     background: rgba(15, 23, 42, 0.75);
