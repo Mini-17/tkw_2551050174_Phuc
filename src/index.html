@@ -55,7 +55,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
         <!-- Brand Logo -->
         <a href="#" class="flex items-center gap-3 group">
-            <div class="w-10 h-10 rounded-card bg-gradient-to-br from-brand-600 to-accent-500 flex items-center justify-center font-display text-2xl font-bold tracking-wider text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-card bg-linear-to-br from-brand-600 to-accent-500 flex items-center justify-center font-display text-2xl font-bold tracking-wider text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
                 A
             </div>
             <div>
@@ -101,7 +101,13 @@
     </div>
 </nav>
 
-<!-- ================= HERO SECTION ================= -->
+
+
+<!-- MAIN -->
+
+<main class="grow">
+
+    <!-- ================= HERO SECTION ================= -->
 <section id="overview" class="py-24 relative overflow-hidden border-b border-slate-800/60 bg-surface">
     <!-- Background Accent Glowing Effects -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-75 bg-brand-600/20 blur-[120px] rounded-full pointer-events-none"></div>
@@ -219,93 +225,129 @@
     </div>
 </section>
 
-<main>
-    <!-- 2: ĐỐI TƯỢNG SỬ DỤNG & MỤC TIÊU HỆ THỐNG -->
-    <section id="target">
-        <div>
-            <div>
-                <h2> Đối Tượng Sử Dụng & Mục Tiêu Hệ Thống</h2>
-                <p>Phân quyền chức năng và mục tiêu phục vụ từng nhóm người dùng.</p>
-            </div>
-
-            <div>
-                <!-- Role 1 -->
-                <div>
-                    <h3>Chủ Garage</h3>
-                    <p>Quản lý tổng thể, báo cáo tài chính, kiểm soát tiến độ làm việc.</p>
-                    <div>[ Khung Báo Cáo & Doanh Thu ]</div>
+     <!-- SECTION 2: ĐỐI TƯỢNG SỬ DỤNG & MỤC TIÊU HỆ THỐNG -->
+    <section id="target" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Hệ Sinh Thái</span>
+                    <h2 class="sec-textmid">Đối Tượng Sử Dụng & Mục Tiêu</h2>
+                    <p class="sec-textInfo">Phân quyền chức năng và mục tiêu phục vụ từng nhóm người dùng.</p>
                 </div>
 
-                <!-- Role 2 -->
-                <div>
-                    <h3>Kỹ Thuật Viên</h3>
-                    <p>Xem lệnh sửa chữa, cập nhật trạng thái xe, báo hỏng vật tư.</p>
-                    <div>[ Khung Checklist Kỹ Thuật ]</div>
-                </div>
-
-                <!-- Role 3 -->
-                <div>
-                    <h3>Nhân Viên CSKH</h3>
-                    <p>Tạo phiếu tiếp nhận, quản lý lịch hẹn, gửi thông báo tự động.</p>
-                    <div>[ Khung Quản Lý Lịch Hẹn ]</div>
-                </div>
-
-                <!-- Role 4 -->
-                <div>
-                    <h3>Khách Hàng (Chủ Xe)</h3>
-                    <p>Tra cứu tiến độ online, duyệt báo giá, đặt trước gói dịch vụ.</p>
-                    <div>[ Khung Cổng Tra Cứu Khách Hàng ]</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3: QUY TRÌNH TIẾP NHẬN XE -->
-    <section id="workflow">
-        <div>
-            <div>
-                <h2> Quy Trình Tiếp Nhận & Quản Lý Xe (4 Bước)</h2>
-            </div>
-
-            <div>
-                <div>
-                    <span>Bước 1</span>
-                    <h4>Check-in & Tiếp Nhận</h4>
-                    <p>Quét biển số, lập phiếu thu xe.</p>
-                </div>
-                <div>
-                    <span>Bước 2</span>
-                    <h4>Chẩn Đoán & Báo Giá</h4>
-                    <p>Kỹ thuật viên duyệt lỗi, gửi báo giá.</p>
-                </div>
-                <div>
-                    <span>Bước 3</span>
-                    <h4>Sửa Chữa & Cập Nhật</h4>
-                    <p>Cập nhật tiến độ trực tiếp lên SaaS.</p>
-                </div>
-                <div>
-                    <span>Bước 4</span>
-                    <h4>Nghiệm Thu & Bàn Giao</h4>
-                    <p>QC chất lượng và xuất hóa đơn.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4: TRA CỨU TIẾN ĐỘ TRỰC TUYẾN -->
-    <section id="tracker">
-        <div>
-            <div>
-                <div>
-                    <h2> Tra Cứu Tiến Độ Trực Tuyến</h2>
-                    <p>Chủ xe nhập biển số xe để theo dõi thời gian thực mà không cần cài đặt phần mềm hay gọi điện.</p>
-                </div>
-                <div>
-                    <div>
-                        <input type="text" placeholder="Nhập biển số xe (VD: 30G-888.99)">
-                        <button type="button">Tra cứu</button>
+            <!-- Khung lưới 4 cột trên Desktop, 2 trên Tablet, 1 trên Mobile -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- khung Role 1-->
+                    <div class="glass-card bd-rl">
+                        <div>
+                            <span class="font-display text-2xl text-accent-500 mb-2 block">01</span>
+                            <h3 class="T-Role">Chủ Garage</h3>
+                            <p class="T-RoleInfo">Quản lý tổng thể hoạt động kinh doanh, kiểm soát tiến độ khoang, doanh thu và vật tư.</p>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-4 border-t border-line mt-4">
+                            <li>• Báo cáo tài chính Real-time</li>
+                            <li>• Đánh giá hiệu suất nhân sự</li>
+                        </ul>
                     </div>
-                    <div>
+
+                <!-- Khung Role 2 -->
+                <div class="glass-card bd-rl">
+                        <div>
+                            <span class="font-display Num">02</span>
+                            <h3 class="T-Role">Kỹ Thuật Viên</h3>
+                            <p class="T-RoleInfo">Nhận lệnh sửa chữa số hóa, sao lưu & cập nhật tình trạng xe từng công đoạn trên thiết bị di động.</p>
+                        </div>
+                        <ul class="T-lists">
+                            <li>• Checklist kiểm tra qua Tablet</li>
+                            <li>• Gửi cảnh báo vật tư cần thay</li>
+                        </ul>
+                    </div>
+
+                <!-- Khung Role 3 -->
+                <div class="glass-card bd-rl">
+                        <div>
+                            <span class="font-display Num">03</span>
+                            <h3 class="T-Role">Nhân Viên CSKH</h3>
+                            <p class="T-RoleInfo">Quản lý lịch hẹn, gửi thông báo tiến độ hoàn thành tự động qua tin nhắn và ghi nhận đánh giá.</p>
+                        </div>
+                        <ul class="T-lists">
+                            <li>• Tiếp nhận lịch đặt trực tuyến</li>
+                            <li>• Tự động gửi báo giá & hóa đơn</li>
+                        </ul>
+                    </div>
+
+                <!-- Khung Role 4 -->
+                <div class="glass-card rounded-card bd-rl-hl">
+                        <div>
+                            <span class="font-display Num">04</span>
+                            <h3 class="T-Role">Khách Hàng (Chủ Xe)</h3>
+                            <p class="T-RoleInfo">Cập nhật tiến độ trực tuyến 24/7, đăng ký/đặt trước gói sửa chữa tại nhà nhanh gọn.</p>
+                        </div>
+                        <ul class="T-lists">
+                            <li>• Tra cứu qua mã biển số xe</li>
+                            <li>• Đặt lịch hẹn sửa chữa tận nơi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: QUY TRÌNH TIẾP NHẬN XE -->
+    <section id="workflow" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Chuẩn Hóa Thao Tác</span>
+                    <h2 class="sec-textmid">Quy Trình Tiếp Nhận & Sửa Chữa</h2>
+                </div>
+
+            <!-- Khung 4 bước quy trình dàn ngang trên Desktop, xếp dọc trên Mobile -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card rounded-card Bd-Steps">
+                    <span class="font-display T-Steps">BƯỚC 01</span>
+                    <h3 class="font-display T-StepsInfo">Check-in Xe</h3>
+                    <p class="text-xs text-muted leading-relaxed">Nhập biển số hoặc quét QR Code tiếp nhận. Lập biên bản tình trạng ngoại quan ban đầu.</p>
+                </div>
+
+                <div class="glass-card rounded-card Bd-Steps">
+                    <span class="font-display T-Steps">BƯỚC 02</span>
+                    <h3 class="font-display T-StepsInfo">Chẩn Đoán & Báo Giá</h3>
+                    <p class="text-xs text-muted leading-relaxed">Kỹ thuật viên duyệt hạng mục kiểm tra, gửi bảng dự toán chi phí trực tuyến tới chủ xe.</p>
+                </div>
+
+                <div class="glass-card rounded-card Bd-Steps">
+                <span class="font-display T-Steps">BƯỚC 03</span>
+                    <h3 class="font-display T-StepsInfo">Sửa Chữa & Cập Nhật</h3>
+                    <p class="text-xs text-muted leading-relaxed">Thực hiện công việc, cập nhật trạng thái các công đoạn lên hệ thống theo thời gian thực.</p>
+                </div>
+
+                <div class="glass-card rounded-card Bd-Steps">
+                    <span class="font-display T-Steps">BƯỚC 04</span>
+                    <h3 class="font-display T-StepsInfo">QC & Bàn Giao</h3>
+                    <p class="text-xs text-muted leading-relaxed">Kiểm tra chất lượng hoàn thiện, xuất hóa đơn điện tử và gửi thông báo nhận xe cho khách.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: TRA CỨU TIẾN ĐỘ TRỰC TUYẾN -->
+    <section id="tracker" class="py-24 border-b border-line">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <!-- Khung 2 cột chia đôi: Bên trái giới thiệu, bên phải widget tìm kiếm -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5 space-y-4">
+                        <span class="sec-text">Minh Bạch Thông Tin</span>
+                        <h2 class="sec-textmid">Tra Cứu Tiến Độ Trực Tuyến</h2>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Chủ xe nhập biển số xe để theo dõi thời gian thực từng hạng mục đang sửa chữa mà không cần cài đặt thêm ứng dụng.
+                        </p>
+                    </div>
+
+                <div class="lg:col-span-7 p-6 border border-line bg-slate-900/30 rounded-card bg-surface-panel/40 space-y-4">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input type="text" placeholder="Nhập biển số xe (VD: 30G-888.99)" class="grow p-3 bg-surface border border-line rounded-card focus:outline-none">
+                        <button type="button" class="px-6 py-3 border border-line rounded-card bg-brand-600 font-bold whitespace-nowrap">Tra cứu</button>
+                    </div>
+                    <div class="p-8 border border-line rounded-card text-center">
                         [ Khung Hiển Thị Tiến Độ & Trạng Thái Xe ]
                     </div>
                 </div>
@@ -313,176 +355,298 @@
         </div>
     </section>
 
-    <!-- 5: GÓI DỊCH VỤ & ĐẶT LỊCH -->
-    <section id="packages">
-        <div>
-            <div>
-                <h2> Đăng Ký & Đặt Trước Gói Sửa Chữa</h2>
-            </div>
+    <!-- SECTION 5: GÓI DỊCH VỤ & ĐẶT LỊCH -->
+    <section id="packages" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Dịch Vụ Nhanh Chóng</span>
+                    <h2 class="sec-textmid">Đăng Ký & Đặt Trước Gói Dịch Vụ</h2>
+                </div>
 
-            <div>
-                <div>
-                    <h3>Bảo Dưỡng Tại Nhà</h3>
-                    <p>Thay nhớt, kiểm tra lưu động tại nhà.</p>
-                    <div>[ Nút Đặt Lịch ]</div>
+            <!-- Khung 3 cột gói dịch vụ -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-card flex flex-col justify-between space-y-6 border-accent-500/50 bg-brand-600/10">
+                    <div>
+                        <span class="text-[11px] font-bold text-muted uppercase tracking-wider block mb-2">Gói Lưu Động</span>
+                        <h3 class="font-display text-3xl text-ink mb-2">Bảo Dưỡng Tại Nhà</h3>
+                        <p class="text-xs text-muted leading-relaxed">Đội kỹ thuật viên mang trang thiết bị lưu động kiểm tra 20 hạng mục an toàn và thay nhớt tận nơi.</p>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                        Đặt Lịch Tận Nhà
+                    </a>
                 </div>
-                <div>
-                    <h3>Bảo Dưỡng Tại Garage</h3>
-                    <p>Kiểm tra tổng quát gầm, máy, điện.</p>
-                    <div>[ Nút Đặt Lịch ]</div>
+
+                <div class="glass-card p-6 rounded-card flex flex-col justify-between space-y-6 border-accent-500/50 bg-brand-600/10">
+                    <div>
+                        <span class="text-[11px] font-bold text-accent-500 uppercase tracking-wider block mb-2">Gói Tiêu Chuẩn</span>
+                        <h3 class="font-display text-3xl text-ink mb-2">Bảo Dưỡng Tại Garage</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">Kiểm tra tổng quát gầm, hệ thống điện, chẩn đoán lỗi chuyên sâu và cân bằng động bánh xe.</p>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-card bg-accent-500 hover:bg-accent-600 text-center text-xs font-bold text-white transition-all">
+                        Đặt Lịch Tại Garage
+                    </a>
                 </div>
-                <div>
-                    <h3>Chẩn Đoán Sửa Chữa Sâu</h3>
-                    <p>Kiểm tra lỗi hộp số, động cơ chuyên sâu.</p>
-                    <div>[ Nút Yêu Cầu ]</div>
+
+                <div class="glass-card p-6 rounded-card flex flex-col justify-between space-y-6 border-accent-500/50 bg-brand-600/10">
+                    <div>
+                        <span class="text-[11px] font-bold text-muted uppercase tracking-wider block mb-2">Gói Nâng Cao</span>
+                        <h3 class="font-display text-3xl text-ink mb-2">Đại Tu & Sửa Chữa Sâu</h3>
+                        <p class="text-xs text-muted leading-relaxed">Xử lý các lỗi phức tạp liên quan đến động cơ, hộp số và hệ thống điều khiển điện tử.</p>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                        Yêu Cầu Báo Giá
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6: TÍNH NĂNG DÀNH CHO NHÂN VIÊN -->
-    <section id="staff-features">
-        <div>
-            <div>
-                <h2> Tính Năng Cho Kỹ Thuật Viên & Nhân Viên</h2>
-            </div>
+    <!-- SECTION 6: TÍNH NĂNG DÀNH CHO NHÂN VIÊN -->
+    <section id="staff-features" class="py-12 border-b border-line">
+       <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Công Cụ Nội Bộ</span>
+                    <h2 class="sec-textmid">Tính Năng Dành Cho Nhân Viên</h2>
+                </div>
 
-            <div>
-                <div>
-                    <strong>• Sao lưu hình ảnh xe</strong>
-                    <span>Chụp và đính kèm tình trạng xe ban đầu.</span>
+            <!-- Khung lưới 6 tính năng (3 cột Desktop / 2 cột Tablet / 1 cột Mobile) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card Feat-Card ">
+                    <strong class="font-display T-FeatMain">• Sao Lưu Hình Ảnh Xe</strong>
+                    <p class="text-xs text-muted leading-relaxed">Chụp ảnh hiện trạng trầy xước, phụ tùng hao mòn và lưu trữ đám mây minh bạch.</p>
                 </div>
-                <div>
-                    <strong>• Cập nhật tiến độ 1-Click</strong>
-                    <span>Chuyển đổi trạng thái lệnh công việc tức thì.</span>
-                </div>
-                <div>
-                    <strong>• Trừ kho phụ tùng tự động</strong>
-                    <span>Tự động khấu trừ vật tư khi xuất kho.</span>
-                </div>
-                <div>
-                    <strong>• Bảng phân công khoang</strong>
-                    <span>Điều phối xe vào các khoang trống hiệu quả.</span>
-                </div>
-                <div>
-                    <strong>• Tính lương năng suất</strong>
-                    <span>Tự động tính hoa hồng công thợ theo lệnh.</span>
-                </div>
-                <div>
-                    <strong>• Tra cứu lịch sử sửa chữa</strong>
-                    <span>Xem nhanh lịch sử xe đã từng vào xưởng.</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 7: BÁO CÁO HIỆU SUẤT & DASHBOARD -->
-    <section id="dashboard">
-        <div>
-            <div>
-                <h2> Báo Cáo Hiệu Suất Vận Hành</h2>
-            </div>
-
-            <div>
-                <div>
-                    <div>
-                        <div>Số Xe Đã Tiếp Nhận</div>
-                        <div>342 Xe</div>
-                    </div>
-                    <div>
-                        <div>Doanh Thu</div>
-                        <div>1.28 Tỷ</div>
-                    </div>
-                    <div>
-                        <div>Thời Gian Trung Bình</div>
-                        <div>2.4 Giờ</div>
-                    </div>
-                    <div>
-                        <div>Đánh Giá CSAT</div>
-                        <div>4.9 / 5.0</div>
-                    </div>
+                <div class="glass-card Feat-Card ">
+                    <strong class="font-display T-FeatMain ">• Cập Nhật Tiến Độ 1-Chạm</strong>
+                    <p class="T-FeatInfo">Chuyển trạng thái công đoạn nhanh chóng ngay trên màn hình cảm ứng của thợ máy.</p>
                 </div>
-                <div>
-                    [ Khung Biểu Đồ Thống Kê Công Suất Xưởng Theo Tuần ]
+
+                <div class="glass-card Feat-Card ">
+                    <strong class="font-display T-FeatMain ">• Trừ Kho Vật Tư Tự Động</strong>
+                    <p class="T-FeatInfo">Khấu trừ tồn kho phụ tùng tức thì khi có lệnh sửa chữa, cảnh báo khi vật tư chạm ngưỡng tối thiểu.</p>
+                </div>
+
+                <div class="glass-card Feat-Card ">
+                    <strong class="font-display T-FeatMain ">• Phân Công Khoang Thông Minh</strong>
+                    <p class="T-FeatInfo">Theo dõi công suất cầu nâng và điều phối xe vào các khoang trống hiệu quả.</p>
+                </div>
+
+                <div class="glass-card Feat-Card ">
+                    <strong class="font-display T-FeatMain ">• Tính Lương Năng Suất (KPI)</strong>
+                    <p class="T-FeatInfo">Tự động tính toán hoa hồng kỹ thuật viên dựa trên lệnh công việc đã hoàn thành.</p>
+                </div>
+
+                <div class="glass-card Feat-Card ">
+                    <strong class="font-display T-FeatMain ">• Tra Cứu Lịch Sử Toàn Diện</strong>
+                    <p class="T-FeatInfo">Xem lại toàn bộ lịch sử các lần bảo dưỡng trước của xe chỉ bằng một lần tìm kiếm.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 8: ĐÁNH GIÁ KHÁCH HÀNG -->
-    <section id="testimonials">
-        <div>
-            <div>
-                <h2> Đánh Giá Từ Chủ Garage</h2>
-            </div>
-
-            <div>
-                <div>
-                    <p>"Phần mềm giúp giảm 80% cuộc gọi hỏi tiến độ từ khách hàng."</p>
-                    <div>- Anh Hùng (Garage Hùng Phát)</div>
+    <!-- SECTION 7: BÁO CÁO HIỆU SUẤT & DASHBOARD -->
+    <section id="dashboard" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Dữ Liệu Quản Trị</span>
+                    <h2 class="sec-textmid">Báo Cáo Hiệu Suất Vận Hành</h2>
                 </div>
-                <div>
-                    <p>"Thợ quen dùng tablet chỉ sau 2 ngày, không còn thất thoát phụ tùng."</p>
-                    <div>- Anh Tuấn (AutoService 365)</div>
+                <!-- 4 Thẻ KPI thống kê nhanh -->
+                <div class="glass-card p-6 sm:p-8 rounded-card space-y-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <div class="Bd-KPIs">
+                            <div class="T-KPIs">Xe Đã Tiếp Nhận</div>
+                            <div class="font-display text-3xl text-ink">342 Xe</div>
+                        </div>
+                        <div class="Bd-KPIs">
+                            <div class="T-KPIs">Doanh Thu Tháng</div>
+                            <div class="font-display text-3xl text-accent-500">1.28 Tỷ</div>
+                        </div>
+                        <div class="Bd-KPIs">
+                            <div class="T-KPIs">Thời Gian Sửa TB</div>
+                            <div class="font-display text-3xl text-ink">2.4 Giờ</div>
+                        </div>
+                        <div class="Bd-KPIs">
+                            <div class="T-KPIs">Đánh Giá CSAT</div>
+                            <div class="font-display text-3xl text-emerald-400">4.9 / 5.0</div>
+                        </div>
                 </div>
-                <div>
-                    <p>"Tính năng đặt lịch tại nhà giúp garage tăng lượng khách rõ rệt."</p>
-                    <div>- Chị Yến (Car Care Pro)</div>
+                <!-- Khung biểu đồ -->
+                <div class="space-y-3 pt-4 border-t border-line">
+                        <span class="text-xs text-muted font-semibold block">Công Suất Hoạt Động Trong Tuần (%)</span>
+                        <div class="grid grid-cols-7 gap-2 items-end h-32 pt-4 text-center text-xs">
+                            <div class="space-y-1"><div class="bg-brand-600/70 h-16 rounded-t"></div><span class="text-muted">T2</span></div>
+                            <div class="space-y-1"><div class="bg-brand-600/80 h-20 rounded-t"></div><span class="text-muted">T3</span></div>
+                            <div class="space-y-1"><div class="bg-brand-600/90 h-24 rounded-t"></div><span class="text-muted">T4</span></div>
+                            <div class="space-y-1"><div class="bg-brand-600 h-24 rounded-t"></div><span class="text-muted">T5</span></div>
+                            <div class="space-y-1"><div class="bg-accent-500 h-28 rounded-t"></div><span class="text-accent-500 font-bold">T6</span></div>
+                            <div class="space-y-1"><div class="bg-accent-500 h-28 rounded-t"></div><span class="text-accent-500 font-bold">T7</span></div>
+                            <div class="space-y-1"><div class="bg-slate-700 h-10 rounded-t"></div><span class="text-muted">CN</span></div>
+                        </div>
                 </div>
-            </div>
         </div>
     </section>
 
-    <!-- 9: BẢNG GIÁ SAAS -->
-    <section id="pricing">
-        <div>
-            <div>
-                <h2> Bảng Giá Đăng Ký Phần Mềm</h2>
-            </div>
+    <!-- SECTION 8: ĐÁNH GIÁ KHÁCH HÀNG -->
+    <section id="testimonials" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Đồng Hành Phát Triển</span>
+                    <h2 class="sec-textmid">Đánh Giá Từ Khách Hàng & Đối Tác</h2>
+                </div>
 
-            <div>
-                <div>
-                    <h3>Gói Khởi Tạo</h3>
-                    <div>490.000 <span>/tháng</span></div>
-                    <p>Dành cho garage dưới 3 khoang.</p>
-                </div>
-                <div>
-                    <h3>Gói Chuyên Nghiệp</h3>
-                    <div>990.000 <span>/tháng</span></div>
-                    <p>Dành cho garage 3 - 8 khoang (Đầy đủ tính năng).</p>
-                </div>
-                <div>
-                    <h3>Gói Chuỗi Garage</h3>
-                    <div>Liên Hệ</div>
-                    <p>Dành cho chuỗi nhiều chi nhánh.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 10: FAQ & FORM LIÊN HỆ -->
-    <section id="faq">
-        <div>
-            <div>
-                <!-- FAQ List -->
-                <div>
-                    <h2> Hỏi Đáp Thường Gặp (FAQ)</h2>
-                    <div>
-                        <div>Q: Khách hàng có cần tải ứng dụng không? ➔ Không, tra cứu qua web link.</div>
-                        <div>Q: Hỗ trợ dùng thử miễn phí? ➔ Hỗ trợ 14 ngày dùng thử full tính năng.</div>
+            <!-- Khung 3 cột đánh giá -->
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-card flex flex-col justify-between space-y-4">
+                    <p class="text-xs text-slate-300 italic leading-relaxed">"Phần mềm giúp giảm 80% thời gian giải thích tiến độ với khách qua điện thoại. Mọi thứ minh bạch và chuẩn xác."</p>
+                    <div class="border-t border-line pt-3">
+                        <strong class="text-ink text-xs block">Anh Hùng</strong>
+                        <span class="text-[11px] text-muted">Garage Hùng Phát (Hà Nội)</span>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div id="contact">
-                    <h3>Đăng Ký Tư Vấn & Dùng Thử</h3>
-                    <form>
-                        <input type="text" placeholder="Họ và tên *">
-                        <input type="tel" placeholder="Số điện thoại / Zalo *">
-                        <input type="text" placeholder="Tên Garage">
-                        <button type="button">Gửi Yêu Cầu</button>
-                    </form>
+                <div class="glass-card p-6 rounded-card flex flex-col justify-between space-y-4">
+                    <p class="text-xs text-slate-300 italic leading-relaxed">"Thợ máy thao tác thành thạo chỉ sau 2 ngày sử dụng tablet. Việc kiểm kê vật tư phụ tùng không còn thất thoát."</p>
+                    <div class="border-t border-line pt-3">
+                        <strong class="text-ink text-xs block">Anh Tuấn</strong>
+                        <span class="text-[11px] text-muted">AutoService 365 (TP.HCM)</span>
+                    </div>
                 </div>
+
+                <div class="glass-card p-6 rounded-card flex flex-col justify-between space-y-4">
+                    <p class="text-xs text-slate-300 italic leading-relaxed">"Tính năng đăng ký dịch vụ tại nhà giúp chuỗi xưởng của tôi mở rộng tệp khách hàng nhanh chóng."</p>
+                    <div class="border-t border-line pt-3">
+                        <strong class="text-ink text-xs block">Chị Yến</strong>
+                        <span class="text-[11px] text-muted">Car Care Pro (Đà Nẵng)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: BẢNG GIÁ SAAS -->
+    <section id="pricing" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="sec-text">Đăng Ký Bản Quyền</span>
+                    <h2 class="sec-textmid">Bảng Giá Dịch Vụ AutoCare SaaS</h2>
+                </div>
+
+            <!-- Khung 3 cột bảng giá -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
+                        <div>
+                            <h3 class="font-display text-3xl text-ink">Gói Khởi Tạo</h3>
+                            <div class="font-display text-4xl text-ink my-3">490.000 <span class="font-body text-xs text-muted">/tháng</span></div>
+                            <p class="text-xs text-muted mb-4">Dành cho các tiệm sửa chữa quy mô dưới 3 khoang.</p>
+                            <ul class="text-xs text-slate-300 space-y-2">
+                                <li>✔ Tối đa 5 tài khoản nhân viên</li>
+                                <li>✔ Tra cứu tiến độ trực tuyến</li>
+                                <li>✔ In phiếu và lập báo giá nhanh</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                            Đăng Ký Gói Khởi Tạo
+                        </a>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6 border-accent-500 ">
+                        <div>
+                            <div class="inline-block px-2 py-0.5 rounded bg-accent-500 text-[10px] font-bold text-white uppercase mb-2">Phổ Biến</div>
+                            <h3 class="font-display text-3xl text-ink">Gói Chuyên Nghiệp</h3>
+                            <div class="font-display text-4xl text-accent-500 my-3">990.000 <span class="font-body text-xs text-muted">/tháng</span></div>
+                            <p class="text-xs text-slate-300 mb-4">Dành cho garage vừa và lớn từ 3 - 8 khoang sửa chữa.</p>
+                            <ul class="text-xs text-slate-300 space-y-2">
+                                <li>✔ Không giới hạn tài khoản thợ</li>
+                                <li>✔ Gửi thông báo tự động qua tin nhắn</li>
+                                <li>✔ Quản lý tồn kho & Báo cáo KPI</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-card bg-accent-500 hover:bg-accent-600 text-center text-xs font-bold text-white transition-all">
+                            Dùng Thử Miễn Phí
+                        </a>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
+                        <div>
+                            <h3 class="font-display text-3xl text-ink">Chuỗi Garage</h3>
+                            <div class="font-display text-4xl text-ink my-3">Liên Hệ</div>
+                            <p class="text-xs text-muted mb-4">Giải pháp tùy chỉnh riêng cho hệ thống chuỗi nhiều chi nhánh.</p>
+                            <ul class="text-xs text-slate-300 space-y-2">
+                                <li>✔ Quản lý đa chi nhánh tập trung</li>
+                                <li>✔ Tích hợp hệ thống ERP theo yêu cầu</li>
+                                <li>✔ Hỗ trợ kỹ thuật chuyên biệt 24/7</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                            Liên Hệ Tư Vấn
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: FAQ & FORM LIÊN HỆ -->
+    <section id="faq" class="py-12 border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <!-- Khung chia 2 cột: Bên trái FAQ, bên phải Form liên hệ -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Khung FAQ -->
+                <div class="lg:col-span-7 space-y-6">
+                        <div>
+                            <span class="text-accent-500 font-bold text-xs uppercase tracking-widest block mb-2">Giải Đáp</span>
+                            <h2 class="font-display text-4xl uppercase text-ink">Câu Hỏi Thường Gặp (FAQ)</h2>
+                        </div>
+
+                        <div class="space-y-3">
+                            <details class="glass-card p-4 rounded-card group" open>
+                                <summary class="font-bold text-xs sm:text-sm text-ink cursor-pointer list-none flex justify-between items-center">
+                                    <span>Khách hàng có cần tải app để xem tiến độ sửa xe không?</span>
+                                    <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+                                </summary>
+                                <p class="text-xs text-muted mt-3 pt-3 border-t border-line">
+                                    Không. Khách hàng chỉ cần bấm vào liên kết trong tin nhắn hoặc tra cứu trực tiếp trên trình duyệt web của bất kỳ thiết bị nào.
+                                </p>
+                            </details>
+
+                            <details class="glass-card p-4 rounded-card group">
+                                <summary class="font-bold text-xs sm:text-sm text-ink cursor-pointer list-none flex justify-between items-center">
+                                    <span>Thời gian dùng thử phần mềm miễn phí là bao lâu?</span>
+                                    <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+                                </summary>
+                                <p class="text-xs text-muted mt-3 pt-3 border-t border-line">
+                                    Chúng tôi hỗ trợ trải nghiệm 14 ngày dùng thử miễn phí đầy đủ tính năng kèm theo sự hỗ trợ trực tiếp từ chuyên viên kỹ thuật.
+                                </p>
+                            </details>
+
+                            <details class="glass-card p-4 rounded-card group">
+                                <summary class="font-bold text-xs sm:text-sm text-ink cursor-pointer list-none flex justify-between items-center">
+                                    <span>Dữ liệu khách hàng và lịch sử bảo dưỡng có được bảo mật không?</span>
+                                    <span class="text-accent-500 group-open:rotate-180 transition-transform">▼</span>
+                                </summary>
+                                <p class="text-xs text-muted mt-3 pt-3 border-t border-line">
+                                    Tất cả dữ liệu được lưu trữ trên hạ tầng đám mây mã hóa SSL 256-bit, đảm bảo bảo mật độc quyền cho từng Garage.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                <!-- Khung Contact Form -->
+                <div class="lg:col-span-5" id="contact">
+                        <div class="glass-card p-6 sm:p-8 rounded-card border-brand-600/50">
+                            <h3 class="font-display text-3xl text-ink uppercase mb-2">Đăng Ký Dùng Thử</h3>
+                            <p class="text-xs text-muted mb-6">Nhận tài khoản Demo và hướng dẫn sử dụng trong vòng 15 phút.</p>
+
+                            <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ trong ít phút.');" class="space-y-4">
+                                <input type="text" required placeholder="Họ và tên Quản lý *" class="w-full px-4 py-3 bg-slate-900 border border-line rounded-card text-xs text-ink focus:outline-none focus:border-accent-500">
+                                <input type="tel" required placeholder="Số điện thoại / Zalo *" class="w-full px-4 py-3 bg-slate-900 border border-line rounded-card text-xs text-ink focus:outline-none focus:border-accent-500">
+                                <input type="text" placeholder="Tên tiệm Garage của bạn" class="w-full px-4 py-3 bg-slate-900 border border-line rounded-card text-xs text-ink focus:outline-none focus:border-accent-500">
+                                <button type="submit" class="w-full py-3.5 bg-accent-500 hover:bg-accent-600 text-white font-bold text-xs uppercase tracking-wider rounded-card transition-all">
+                                    Gửi Yêu Cầu Dùng Thử
+                                </button>
+                            </form>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
