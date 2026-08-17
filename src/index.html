@@ -532,57 +532,75 @@
                     <h2 class="sec-textmid">Bảng Giá Dịch Vụ AutoCare SaaS</h2>
                 </div>
 
+            <!-- khung tùy chỉnh bảng giá theo tháng/năm -->
+            <div class="flex items-center justify-center gap-3 mb-12">
+                <span class="text-sm font-semibold text-ink">Thanh toán theo tháng</span>
+                
+                <!-- Toggle switch button -->
+                <button type="button" class="relative inline-flex h-7 w-14 shrink-0 cursor-pointer rounded-full border border-white/10 bg-slate-800/80 p-1 transition-colors duration-200 ease-in-out focus:outline-none" aria-label="Chuyển đổi gói theo tháng hoặc năm">
+                    <!-- Nút trượt tròn -->
+                    <span class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-accent-500 shadow-md transition duration-200 ease-in-out translate-x-0"></span>
+                </button>
+
+                <span class="text-sm font-semibold text-muted flex items-center gap-1.5">
+                    Thanh toán theo năm 
+                    <span class="rounded-full bg-accent-500/20 border border-accent-500/30 px-2 py-0.5 text-[10px] font-bold text-accent-400 uppercase tracking-wider">
+                        Tiết kiệm 20%
+                    </span>
+                </span>
+            </div>
+
             <!-- Khung 3 cột bảng giá -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
-                        <div>
-                            <h3 class="font-display text-3xl text-ink">Gói Khởi Tạo</h3>
-                            <div class="font-display text-4xl text-ink my-3">490.000 <span class="font-body text-xs text-muted">/tháng</span></div>
-                            <p class="text-xs text-muted mb-4">Dành cho các tiệm sửa chữa quy mô dưới 3 khoang.</p>
-                            <ul class="text-xs text-slate-300 space-y-2">
-                                <li>✔ Tối đa 5 tài khoản nhân viên</li>
-                                <li>✔ Tra cứu tiến độ trực tuyến</li>
-                                <li>✔ In phiếu và lập báo giá nhanh</li>
-                            </ul>
-                        </div>
-                        <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
-                            Đăng Ký Gói Khởi Tạo
-                        </a>
+                <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
+                    <div>
+                        <h3 class="font-display text-3xl text-ink">Gói Khởi Tạo</h3>
+                        <div class="font-display text-4xl text-ink my-3">490.000 <span class="font-body text-xs text-muted">/tháng</span></div>
+                        <p class="text-xs text-muted mb-4">Dành cho các tiệm sửa chữa quy mô dưới 3 khoang.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li>✔ Tối đa 5 tài khoản nhân viên</li>
+                            <li>✔ Tra cứu tiến độ trực tuyến</li>
+                            <li>✔ In phiếu và lập báo giá nhanh</li>
+                        </ul>
                     </div>
-
-                    <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6 border-accent-500 ">
-                        <div>
-                            <div class="inline-block px-2 py-0.5 rounded bg-accent-500 text-[10px] font-bold text-white uppercase mb-2">Phổ Biến</div>
-                            <h3 class="font-display text-3xl text-ink">Gói Chuyên Nghiệp</h3>
-                            <div class="font-display text-4xl text-accent-500 my-3">990.000 <span class="font-body text-xs text-muted">/tháng</span></div>
-                            <p class="text-xs text-slate-300 mb-4">Dành cho garage vừa và lớn từ 3 - 8 khoang sửa chữa.</p>
-                            <ul class="text-xs text-slate-300 space-y-2">
-                                <li>✔ Không giới hạn tài khoản thợ</li>
-                                <li>✔ Gửi thông báo tự động qua tin nhắn</li>
-                                <li>✔ Quản lý tồn kho & Báo cáo KPI</li>
-                            </ul>
-                        </div>
-                        <a href="#contact" class="w-full py-3 rounded-card bg-accent-500 hover:bg-accent-600 text-center text-xs font-bold text-white transition-all">
-                            Dùng Thử Miễn Phí
-                        </a>
-                    </div>
-
-                    <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
-                        <div>
-                            <h3 class="font-display text-3xl text-ink">Chuỗi Garage</h3>
-                            <div class="font-display text-4xl text-ink my-3">Liên Hệ</div>
-                            <p class="text-xs text-muted mb-4">Giải pháp tùy chỉnh riêng cho hệ thống chuỗi nhiều chi nhánh.</p>
-                            <ul class="text-xs text-slate-300 space-y-2">
-                                <li>✔ Quản lý đa chi nhánh tập trung</li>
-                                <li>✔ Tích hợp hệ thống ERP theo yêu cầu</li>
-                                <li>✔ Hỗ trợ kỹ thuật chuyên biệt 24/7</li>
-                            </ul>
-                        </div>
-                        <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
-                            Liên Hệ Tư Vấn
-                        </a>
-                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                        Đăng Ký Gói Khởi Tạo
+                    </a>
                 </div>
+
+                <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6 border-accent-500 ">
+                    <div>
+                        <div class="inline-block px-2 py-0.5 rounded bg-accent-500 text-[10px] font-bold text-white uppercase mb-2">Phổ Biến</div>
+                        <h3 class="font-display text-3xl text-ink">Gói Chuyên Nghiệp</h3>
+                        <div class="font-display text-4xl text-accent-500 my-3">990.000 <span class="font-body text-xs text-muted">/tháng</span></div>
+                        <p class="text-xs text-slate-300 mb-4">Dành cho garage vừa và lớn từ 3 - 8 khoang sửa chữa.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li>✔ Không giới hạn tài khoản thợ</li>
+                            <li>✔ Gửi thông báo tự động qua tin nhắn</li>
+                            <li>✔ Quản lý tồn kho & Báo cáo KPI</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-card bg-accent-500 hover:bg-accent-600 text-center text-xs font-bold text-white transition-all">
+                        Dùng Thử Miễn Phí
+                    </a>
+                </div>
+
+                <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
+                    <div>
+                        <h3 class="font-display text-3xl text-ink">Chuỗi Garage</h3>
+                        <div class="font-display text-4xl text-ink my-3">Liên Hệ</div>
+                        <p class="text-xs text-muted mb-4">Giải pháp tùy chỉnh riêng cho hệ thống chuỗi nhiều chi nhánh.</p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li>✔ Quản lý đa chi nhánh tập trung</li>
+                            <li>✔ Tích hợp hệ thống ERP theo yêu cầu</li>
+                            <li>✔ Hỗ trợ kỹ thuật chuyên biệt 24/7</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                        Liên Hệ Tư Vấn
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
