@@ -215,4 +215,16 @@
       @apply text-xs text-muted mb-1;
     }
 
+    /*PRICING SECTION*/
+    .Types-Compation{
+      @apply py-3 px-4 font-medium text-ink dark:text-ink-invert;
+    }
+
+    .Compation-Text{
+      @apply py-3 px-4 text-center;
+    }
+
+
+
+
 }
