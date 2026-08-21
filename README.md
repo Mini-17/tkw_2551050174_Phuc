@@ -7,6 +7,13 @@ Website giới thiệu giải pháp SaaS chuyên dụng dành cho các tiệm s�
 - Tối ưu quy trình tiếp nhận xe
 - Nâng cao trải nghiệm khách hàng.
 
+
+
+# Danh sách URL Công Khai (Live Demo)
+- **Trang chủ (Overview):** [https://mini-17.github.io/tkw_2551050174_Phuc/]
+- **Trang Bảng Giá (Pricing):** [https://mini-17.github.io/tkw_2551050174_Phuc/pricing.html]
+- **Trang Liên Hệ (Contact):** [https://mini-17.github.io/tkw_2551050174_Phuc/contact.html]
+
 # Thông tin
 
 đối tượng: chủ garage, kỹ thuật viên, nhân viên chăm sóc khách hàng
