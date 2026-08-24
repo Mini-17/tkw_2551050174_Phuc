@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GaraMaster</title>
+    <!-- Link file CSS đã biên dịch từ Tailwind -->
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="bg-surface text-ink font-body antialiased selection:bg-accent-500 selection:text-white min-h-screen flex flex-col overflow-x-hidden
+            dark:bg-surface-invert dark:text-ink-invert transition-colors duration-300">
+
+<!-- KHUNG QUẢN LÝ BẢN GHI (STATE -> RENDER) -->
+<section id="records-app" class="py-12 border-b border-line">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
+        
+        <!-- Thanh điều khiển: Tìm kiếm & Bộ lọc -->
+        <div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-card bg-surface-panel/40 border border-line">
+            <div class="flex flex-wrap items-center gap-3 grow">
+                <input id="filter-search" type="text" placeholder="Tìm tên khách hàng hoặc mã..." class="px-3 py-2 text-xs rounded bg-surface border border-line text-ink focus:outline-none focus:border-accent-500 w-full sm:w-64">
+                
+                <select id="filter-category" class="px-3 py-2 text-xs rounded bg-surface border border-line text-ink focus:outline-none">
+                    <option value="all">Tất cả danh mục</option>
+                    <option value="Bảo dưỡng">Bảo dưỡng</option>
+                    <option value="Sửa chữa">Sửa chữa</option>
+                    <option value="Chăm sóc">Chăm sóc</option>
+                    <option value="Đại tu">Đại tu</option>
+                </select>
+
+                <select id="filter-status" class="px-3 py-2 text-xs rounded bg-surface border border-line text-ink focus:outline-none">
+                    <option value="all">Tất cả trạng thái</option>
+                    <option value="da-chot">Đã chốt</option>
+                    <option value="dang-xu-ly">Đang xử lý</option>
+                    <option value="huy">Đã hủy</option>
+                </select>
+
+                <select id="filter-sort" class="px-3 py-2 text-xs rounded bg-surface border border-line text-ink focus:outline-none">
+                    <option value="date-desc">Ngày mới nhất</option>
+                    <option value="date-asc">Ngày cũ nhất</option>
+                    <option value="amount-desc">Số tiền cao ➔ thấp</option>
+                    <option value="amount-asc">Số tiền thấp ➔ cao</option>
+                </select>
+            </div>
+
+            <button id="btn-reset-data" type="button" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded border border-line transition-colors">
+                Khôi phục dữ liệu mẫu
+            </button>
+        </div>
+
+        <!-- Thanh thống kê -->
+        <div class="flex gap-4 text-xs text-muted">
+            <span>Hiển thị: <strong id="stat-count" class="text-ink">0</strong> phiếu</span>
+            <span>Tổng tiền: <strong id="stat-amount" class="text-accent-500">0 ₫</strong></span>
+        </div>
+
+        <!-- 4 Trạng thái giao diện -->
+        <!-- 1. Trạng thái Loading -->
+        <div id="loading-state" class="p-12 text-center text-xs text-muted border border-line rounded-card space-y-2">
+            <div class="inline-block animate-spin text-accent-500">⚙</div>
+            <div>Đang nạp dữ liệu từ hệ thống...</div>
+        </div>
+
+        <!-- 2. Trạng thái Lỗi -->
+        <div id="error-state" class="p-8 text-center text-xs text-red-400 bg-red-500/10 border border-red-500/30 rounded-card" hidden>
+            <p id="error-message"></p>
+        </div>
+
+        <!-- 3. Trạng thái Rỗng -->
+        <div id="empty-state" class="p-12 text-center text-xs text-muted border border-dashed border-line rounded-card" hidden>
+            Không tìm thấy bản ghi nào khớp với điều kiện lọc.
+        </div>
+
+        <!-- 4. Trạng thái Có dữ liệu (Bảng cuộn ngang trên Mobile) -->
+        <div class="overflow-x-auto">
+            <table id="record-table" class="w-full text-left text-xs border-collapse min-w-180" hidden>
+                <thead>
+                    <tr class="border-b border-line text-muted uppercase text-[10px] tracking-wider">
+                        <th class="py-3 px-2">Mã Phiếu</th>
+                        <th class="py-3 px-2">Tên Khách Hàng</th>
+                        <th class="py-3 px-2">Dịch Vụ</th>
+                        <th class="py-3 px-2">Khối Lượng</th>
+                        <th class="py-3 px-2">Thành Tiền</th>
+                        <th class="py-3 px-2">Ngày Tạo</th>
+                        <th class="py-3 px-2">Trạng Thái</th>
+                        <th class="py-3 px-2 text-right">Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody id="record-body" class="divide-y divide-line/40"></tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+
+<button id="back-to-top" class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-accent-500 text-white shadow-lg transition-all duration-300 opacity-0 hidden hover:scale-110 focus:outline-none" aria-label="Lên đầu trang">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+</button>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
