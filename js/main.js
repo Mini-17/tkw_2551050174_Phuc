@@ -6,6 +6,8 @@ import { initPricing } from "./pricing.js";
 import { initSlider } from "./slider.js";
 import { initReveal } from "./reveal.js";
 
+import { initApp } from "./app.js";
+
 // Khởi chạy tất cả module
 initTheme();
 initNav();
@@ -15,3 +17,5 @@ initFaq();
 initPricing();
 initSlider();
 initReveal();
+
+initApp();
