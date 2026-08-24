@@ -39,7 +39,6 @@
 <!-- ================= NAVBAR ================= -->
 <nav class="sticky top-0 z-50 glass-nav border-b border-line/20 dark:border-line-invert-light transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
-        <!-- Brand Logo -->
         <a href="index.html" class="flex items-center gap-3 group">
             <div class="w-10 h-10 rounded-card bg-linear-to-br from-brand-600 to-accent-500 flex items-center justify-center font-display text-2xl font-bold tracking-wider text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
                 A
@@ -50,7 +49,6 @@
             </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
         <div class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-300">
             <a href="index.html#overview" class="nav_desktop_link">Trang Chủ</a>
             <a href="index.html#target" class="nav_desktop_link">Đối Tượng</a>
@@ -59,7 +57,6 @@
             <a href="contact.html" class="nav_desktop_link text-accent-500 font-bold">Liên Hệ</a>
         </div>
 
-        <!-- Action Controls -->
         <div class="flex items-center gap-3">
             <div class="hidden sm:flex items-center gap-3">
                 <a href="index.html#tracker" class="btn btn-outline px-4 py-2 text-xs">Tra Cứu Trực Tuyến</a>
@@ -106,8 +103,7 @@
             </p>
         </div>
 
-        <!-- 2 Cột: Thông tin liên hệ trực tiếp (Trái) & Form liên hệ chuẩn A11y (Phải) -->
-        <section id="faq" class="py-12 border-b border-line">
+        <!-- 2 Cột: Thông tin liên hệ trực tiếp & Form liên hệ -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             
             <!-- Cột trái: Thông tin văn phòng & Kênh hỗ trợ -->
@@ -158,7 +154,7 @@
                 </div>
             </div>
 
-            <!-- Cột phải: Accessible Form Liên hệ & Đăng ký tư vấn -->
+            <!-- Cột phải: Form Liên hệ -->
             <div class="lg:col-span-7">
                 <div class="glass-card p-6 sm:p-8 border-brand-600/50">
                     <h2 class="font-display text-2xl sm:text-3xl text-ink dark:text-ink-invert uppercase mb-1">
@@ -170,7 +166,6 @@
 
                     <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Đội ngũ tư vấn sẽ liên hệ ngay.');" class="space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <!-- Họ và tên -->
                             <div>
                                 <label for="contact_name" class="block text-xs font-semibold uppercase tracking-wider text-ink dark:text-ink-invert mb-1">
                                     Họ và tên Quản lý <span class="text-accent-500">*</span>
@@ -178,7 +173,6 @@
                                 <input type="text" id="contact_name" name="contact_name" required placeholder="Nguyễn Văn A" class="w-full px-4 py-3 bg-slate-900/80 border border-line/40 rounded-card text-xs text-ink dark:text-ink-invert focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/30">
                             </div>
 
-                            <!-- Số điện thoại -->
                             <div>
                                 <label for="contact_phone" class="block text-xs font-semibold uppercase tracking-wider text-ink dark:text-ink-invert mb-1">
                                     Số điện thoại / Zalo <span class="text-accent-500">*</span>
@@ -188,7 +182,6 @@
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <!-- Email -->
                             <div>
                                 <label for="contact_email" class="block text-xs font-semibold uppercase tracking-wider text-ink dark:text-ink-invert mb-1">
                                     Email Doanh Nghiệp <span class="text-accent-500">*</span>
@@ -196,7 +189,6 @@
                                 <input type="email" id="contact_email" name="contact_email" required placeholder="contact@garage.vn" class="w-full px-4 py-3 bg-slate-900/80 border border-line/40 rounded-card text-xs text-ink dark:text-ink-invert focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/30">
                             </div>
 
-                            <!-- Tên tiệm xưởng -->
                             <div>
                                 <label for="contact_garage" class="block text-xs font-semibold uppercase tracking-wider text-ink dark:text-ink-invert mb-1">
                                     Tên Garage / Xưởng Dịch Vụ
@@ -205,7 +197,6 @@
                             </div>
                         </div>
 
-                        <!-- Gói dịch vụ quan tâm -->
                         <div>
                             <label for="contact_plan" class="block text-xs font-semibold uppercase tracking-wider text-ink dark:text-ink-invert mb-1">
                                 Gói dịch vụ quan tâm
@@ -217,7 +208,6 @@
                             </select>
                         </div>
 
-                        <!-- Ghi chú nội dung -->
                         <div>
                             <label for="contact_message" class="block text-xs font-semibold uppercase tracking-wider text-ink dark:text-ink-invert mb-1">
                                 Yêu cầu chi tiết / Ghi chú thêm
@@ -225,7 +215,6 @@
                             <textarea id="contact_message" name="contact_message" rows="4" placeholder="Nhập quy mô số khoang, nhu cầu quản lý đặc biệt của garage..." class="w-full px-4 py-3 bg-slate-900/80 border border-line/40 rounded-card text-xs text-ink dark:text-ink-invert focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/30"></textarea>
                         </div>
 
-                        <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary w-full py-3.5 text-xs uppercase tracking-wider">
                             Gửi Yêu Cầu Tư Vấn & Dùng Thử
                         </button>
@@ -234,7 +223,6 @@
             </div>
 
         </div>
-        </section>
     </div>
 </main>
 
@@ -249,13 +237,10 @@
     </div>
 </footer>
 
-<!-- Nút Lên đầu trang (Ẩn mặc định, hiện khi cuộn > 400px) -->
 <button id="back-to-top" class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-accent-500 text-white shadow-lg transition-all duration-300 opacity-0 hidden hover:scale-110 focus:outline-none" aria-label="Lên đầu trang">
     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
 </button>
 
-<!-- Nạp script module -->
 <script type="module" src="./js/main.js"></script>
-
 </body>
 </html>

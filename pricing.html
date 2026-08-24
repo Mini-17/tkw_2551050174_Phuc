@@ -39,7 +39,6 @@
 <!-- ================= NAVBAR ================= -->
 <nav class="sticky top-0 z-50 glass-nav border-b border-line/20 dark:border-line-invert-light transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
-        <!-- Brand Logo -->
         <a href="index.html" class="flex items-center gap-3 group">
             <div class="w-10 h-10 rounded-card bg-linear-to-br from-brand-600 to-accent-500 flex items-center justify-center font-display text-2xl font-bold tracking-wider text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
                 A
@@ -50,16 +49,14 @@
             </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
         <div class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-300">
             <a href="index.html#overview" class="nav_desktop_link">Trang Chủ</a>
             <a href="index.html#target" class="nav_desktop_link">Đối Tượng</a>
             <a href="index.html#workflow" class="nav_desktop_link">Quy Trình</a>
-            <a href="pricing.html" class="nav_desktop_link">Bảng Giá SaaS</a>
-            <a href="contact.html" class="nav_desktop_link text-accent-500 font-bold">Liên Hệ</a>
+            <a href="pricing.html" class="nav_desktop_link text-accent-500 font-bold">Bảng Giá SaaS</a>
+            <a href="contact.html" class="nav_desktop_link">Liên Hệ</a>
         </div>
 
-        <!-- Action Controls -->
         <div class="flex items-center gap-3">
             <div class="hidden sm:flex items-center gap-3">
                 <a href="index.html#tracker" class="btn btn-outline px-4 py-2 text-xs">Tra Cứu Trực Tuyến</a>
@@ -85,8 +82,8 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden xl:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-3">
         <a href="index.html#overview" class="nav_mobile_link">Trang Chủ</a>
-        <a href="pricing.html" class="nav_mobile_link">Bảng Giá SaaS</a>
-        <a href="contact.html" class="nav_mobile_link text-accent-500 font-bold">Liên Hệ Tư Vấn</a>
+        <a href="pricing.html" class="nav_mobile_link text-accent-500 font-bold">Bảng Giá SaaS</a>
+        <a href="contact.html" class="nav_mobile_link">Liên Hệ Tư Vấn</a>
         <div class="pt-4">
             <a href="index.html#tracker" class="btn btn-outline w-full text-center">Tra Cứu Trực Tuyến</a>
         </div>
@@ -95,99 +92,94 @@
 
 <!-- ================= MAIN CONTENT ================= -->
 <main class="grow py-12 sm:py-20 border-b border-line/20 dark:border-line-invert">
-   
-    <section id="pricing" class="py-12 border-b border-line">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="sec-text">Đăng Ký Bản Quyền</span>
-                    <h2 class="sec-textmid">Bảng Giá Dịch Vụ AutoCare SaaS</h2>
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
+        
+        <section id="pricing">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="sec-text">Đăng Ký Bản Quyền</span>
+                <h1 class="sec-textmid">Bảng Giá Dịch Vụ AutoCare SaaS</h1>
+                <p class="sec-textInfo text-sm sm:text-base mt-2">
+                    Lựa chọn gói giải pháp linh hoạt, hỗ trợ chuyển đổi dữ liệu và dùng thử miễn phí 14 ngày[cite: 1, 3].
+                </p>
+
+                <!-- Toggle Switch Tháng / Năm -->
+                <div class="flex items-center justify-center gap-3 mt-8">
+                    <span class="text-sm font-semibold text-ink dark:text-ink-invert">Thanh toán theo tháng</span>
+                    
+                    <button type="button" class="relative inline-flex h-7 w-14 shrink-0 cursor-pointer rounded-full border border-white/10 bg-slate-800/80 p-1 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-accent-500" aria-label="Chuyển đổi gói theo tháng hoặc năm">
+                        <span class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-accent-500 shadow-md transition duration-200 ease-in-out translate-x-0"></span>
+                    </button>
+
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm font-semibold text-muted dark:text-muted-invert">
+                            Thanh toán theo năm
+                        </span>
+                        <span class="rounded-full bg-accent-500/20 border border-accent-500/30 px-2.5 py-0.5 text-[10px] font-bold text-accent-400 uppercase tracking-wider whitespace-nowrap">
+                            Tiết kiệm 20%
+                        </span>
+                    </div>
                 </div>
-
-            <!-- khung tùy chỉnh bảng giá theo tháng/năm -->
-            <div class="flex items-center justify-center gap-3 mb-12">
-                <span class="text-sm font-semibold text-ink">Thanh toán theo tháng</span>
-                
-                <!-- Toggle switch button -->
-                <button type="button" class="relative inline-flex h-7 w-14 shrink-0 cursor-pointer rounded-full border border-white/10 bg-slate-800/80 p-1 transition-colors duration-200 ease-in-out focus:outline-none" aria-label="Chuyển đổi gói theo tháng hoặc năm">
-                    <!-- Nút trượt tròn -->
-                    <span class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-accent-500 shadow-md transition duration-200 ease-in-out translate-x-0"></span>
-                </button>
-
-                <span class="text-sm font-semibold text-muted flex items-center gap-1.5">
-                    Thanh toán theo năm 
-                    <span class="rounded-full bg-accent-500/20 border border-accent-500/30 px-2 py-0.5 text-[10px] font-bold text-accent-400 uppercase tracking-wider">
-                        Tiết kiệm 20%
-                    </span>
-                </span>
             </div>
-
-    <!-- Nhãn Năm kèm Badge Tiết kiệm -->
-    <div class="flex items-center gap-2">
-        <span id="label-yearly" class="text-sm font-semibold text-muted transition-colors">
-            Thanh toán theo năm
-        </span>
-        <span class="rounded-full bg-accent-500/20 border border-accent-500/30 px-2.5 py-0.5 text-[10px] font-bold text-accent-400 uppercase tracking-wider whitespace-nowrap">
-            Tiết kiệm 20%
-        </span>
-    </div>
-
-</div>
 
             <!-- Khung 3 cột bảng giá -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
                 <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
                     <div>
-                        <h3 class="font-display text-3xl text-ink">Gói Khởi Tạo</h3>
-                        <div class="font-display text-4xl text-ink my-3">490.000 <span class="font-body text-xs text-muted">/tháng</span></div>
-                        <p class="text-xs text-muted mb-4">Dành cho các tiệm sửa chữa quy mô dưới 3 khoang.</p>
-                        <ul class="text-xs text-slate-300 space-y-2">
+                        <h3 class="font-display text-3xl text-ink dark:text-ink-invert">Gói Khởi Tạo</h3>
+                        <div class="font-display text-4xl text-ink dark:text-ink-invert my-3">490.000 <span class="font-body text-xs text-muted dark:text-muted-invert font-normal">/tháng</span></div>
+                        <p class="text-xs text-muted dark:text-muted-invert mb-4">Dành cho các tiệm sửa chữa quy mô dưới 3 khoang.</p>
+                        <ul class="text-xs text-slate-300 dark:text-muted-invert space-y-2">
                             <li>✔ Tối đa 5 tài khoản nhân viên</li>
                             <li>✔ Tra cứu tiến độ trực tuyến</li>
                             <li>✔ In phiếu và lập báo giá nhanh</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                    <a href="contact.html" class="btn btn-outline w-full py-3 text-center text-xs font-bold uppercase tracking-wider">
                         Đăng Ký Gói Khởi Tạo
                     </a>
                 </div>
 
-                <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6 border-accent-500 ">
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6 border-accent-500 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded bg-accent-500 text-[10px] font-bold text-white uppercase tracking-wider shadow">
+                        Phổ Biến
+                    </div>
                     <div>
-                        <div class="inline-block px-2 py-0.5 rounded bg-accent-500 text-[10px] font-bold text-white uppercase mb-2">Phổ Biến</div>
-                        <h3 class="font-display text-3xl text-ink">Gói Chuyên Nghiệp</h3>
-                        <div class="font-display text-4xl text-accent-500 my-3">990.000 <span class="font-body text-xs text-muted">/tháng</span></div>
-                        <p class="text-xs text-slate-300 mb-4">Dành cho garage vừa và lớn từ 3 - 8 khoang sửa chữa.</p>
-                        <ul class="text-xs text-slate-300 space-y-2">
+                        <h3 class="font-display text-3xl text-ink dark:text-ink-invert">Gói Chuyên Nghiệp</h3>
+                        <div class="font-display text-4xl text-accent-500 my-3">990.000 <span class="font-body text-xs text-muted dark:text-muted-invert font-normal">/tháng</span></div>
+                        <p class="text-xs text-slate-300 dark:text-muted-invert mb-4">Dành cho garage vừa và lớn từ 3 - 8 khoang sửa chữa.</p>
+                        <ul class="text-xs text-slate-300 dark:text-muted-invert space-y-2">
                             <li>✔ Không giới hạn tài khoản thợ</li>
                             <li>✔ Gửi thông báo tự động qua tin nhắn</li>
                             <li>✔ Quản lý tồn kho & Báo cáo KPI</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="w-full py-3 rounded-card bg-accent-500 hover:bg-accent-600 text-center text-xs font-bold text-white transition-all">
+                    <a href="contact.html" class="btn btn-primary w-full py-3 text-center text-xs font-bold uppercase tracking-wider">
                         Dùng Thử Miễn Phí
                     </a>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="glass-card p-8 rounded-card flex flex-col justify-between space-y-6">
                     <div>
-                        <h3 class="font-display text-3xl text-ink">Chuỗi Garage</h3>
-                        <div class="font-display text-4xl text-ink my-3">Liên Hệ</div>
-                        <p class="text-xs text-muted mb-4">Giải pháp tùy chỉnh riêng cho hệ thống chuỗi nhiều chi nhánh.</p>
-                        <ul class="text-xs text-slate-300 space-y-2">
+                        <h3 class="font-display text-3xl text-ink dark:text-ink-invert">Chuỗi Garage</h3>
+                        <div class="font-display text-4xl text-ink dark:text-ink-invert my-3">Liên Hệ</div>
+                        <p class="text-xs text-muted dark:text-muted-invert mb-4">Giải pháp tùy chỉnh riêng cho hệ thống chuỗi nhiều chi nhánh.</p>
+                        <ul class="text-xs text-slate-300 dark:text-muted-invert space-y-2">
                             <li>✔ Quản lý đa chi nhánh tập trung</li>
                             <li>✔ Tích hợp hệ thống ERP theo yêu cầu</li>
                             <li>✔ Hỗ trợ kỹ thuật chuyên biệt 24/7</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="w-full py-3 rounded-card border border-line text-center text-xs font-bold text-slate-200 hover:border-slate-500 transition-all">
+                    <a href="contact.html" class="btn btn-outline w-full py-3 text-center text-xs font-bold uppercase tracking-wider">
                         Liên Hệ Tư Vấn
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-        <!-- Bảng So Sánh Tính Năng (Feature Comparison Table) -->
+        <!-- Bảng So Sánh Tính Năng -->
         <div class="glass-card p-6 sm:p-8 space-y-6 overflow-hidden">
             <h2 class="font-display text-2xl sm:text-3xl text-ink dark:text-ink-invert uppercase">
                 So Sánh Chi Tiết Tính Năng
@@ -198,41 +190,41 @@
                     <thead>
                         <tr class="border-b border-line/20 dark:border-line-invert-light text-ink dark:text-ink-invert font-bold">
                             <th class="py-3 px-4">Tính năng hệ thống</th>
-                            <th class="Compation-Text">Khởi Tạo</th>
-                            <th class="Compation-Text text-accent-500">Chuyên Nghiệp</th>
-                            <th class="Compation-Text">Chuỗi Garage</th>
+                            <th class="py-3 px-4 text-center">Khởi Tạo</th>
+                            <th class="py-3 px-4 text-center text-accent-500">Chuyên Nghiệp</th>
+                            <th class="py-3 px-4 text-center">Chuỗi Garage</th>
                         </tr>
                     </thead>
                     <tbody class="text-muted dark:text-muted-invert divide-y divide-line/10 dark:divide-line-invert-light">
                         <tr>
-                            <td class="Types-Compation">Số lượng khoang & Cầu nâng</td>
-                            <td class="Compation-Text">Tối đa 3</td>
-                            <td class="Compation-Text text-accent-500 font-semibold">Tối đa 10</td>
-                            <td class="Compation-Text">Không giới hạn</td>
+                            <td class="py-3 px-4 font-medium text-ink dark:text-ink-invert">Số lượng khoang & Cầu nâng</td>
+                            <td class="py-3 px-4 text-center">Tối đa 3</td>
+                            <td class="py-3 px-4 text-center text-accent-500 font-semibold">Tối đa 10</td>
+                            <td class="py-3 px-4 text-center">Không giới hạn</td>
                         </tr>
                         <tr>
-                            <td class="Types-Compation">Tra cứu tiến độ qua Web</td>
-                            <td class="Compation-Text">✔</td>
-                            <td class="Compation-Text text-accent-500 font-semibold">✔</td>
-                            <td class="Compation-Text">✔</td>
+                            <td class="py-3 px-4 font-medium text-ink dark:text-ink-invert">Tra cứu tiến độ qua Web</td>
+                            <td class="py-3 px-4 text-center">✔</td>
+                            <td class="py-3 px-4 text-center text-accent-500 font-semibold">✔</td>
+                            <td class="py-3 px-4 text-center">✔</td>
                         </tr>
                         <tr>
-                            <td class="Types-Compation">Gửi tin nhắn SMS / Zalo ZNS</td>
-                            <td class="Compation-Text">—</td>
-                            <td class="Compation-Text text-accent-500 font-semibold">✔ (Tự động)</td>
-                            <td class="Compation-Text">✔ (Tự động)</td>
+                            <td class="py-3 px-4 font-medium text-ink dark:text-ink-invert">Gửi tin nhắn SMS / Zalo ZNS</td>
+                            <td class="py-3 px-4 text-center">—</td>
+                            <td class="py-3 px-4 text-center text-accent-500 font-semibold">✔ (Tự động)</td>
+                            <td class="py-3 px-4 text-center">✔ (Tự động)</td>
                         </tr>
                         <tr>
-                            <td class="Types-Compation">Báo cáo tồn kho & Trừ kho tự động</td>
-                            <td class="Compation-Text">—</td>
-                            <td class="Compation-Text text-accent-500 font-semibold">✔</td>
-                            <td class="Compation-Text">✔ (Đa kho)</td>
+                            <td class="py-3 px-4 font-medium text-ink dark:text-ink-invert">Báo cáo tồn kho & Trừ kho tự động</td>
+                            <td class="py-3 px-4 text-center">—</td>
+                            <td class="py-3 px-4 text-center text-accent-500 font-semibold">✔</td>
+                            <td class="py-3 px-4 text-center">✔ (Đa kho)</td>
                         </tr>
                         <tr>
-                            <td class="Types-Compation">Hỗ trợ kỹ thuật</td>
-                            <td class="Compation-Text">Giờ hành chính</td>
-                            <td class="Compation-Text text-accent-500 font-semibold">24/7 Hotline</td>
-                            <td class="Compation-Text">Kỹ sư hỗ trợ Onsite</td>
+                            <td class="py-3 px-4 font-medium text-ink dark:text-ink-invert">Hỗ trợ kỹ thuật</td>
+                            <td class="py-3 px-4 text-center">Giờ hành chính</td>
+                            <td class="py-3 px-4 text-center text-accent-500 font-semibold">24/7 Hotline</td>
+                            <td class="py-3 px-4 text-center">Kỹ sư hỗ trợ Onsite</td>
                         </tr>
                     </tbody>
                 </table>
@@ -253,13 +245,10 @@
     </div>
 </footer>
 
-<!-- Nút Lên đầu trang (Ẩn mặc định, hiện khi cuộn > 400px) -->
 <button id="back-to-top" class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-accent-500 text-white shadow-lg transition-all duration-300 opacity-0 hidden hover:scale-110 focus:outline-none" aria-label="Lên đầu trang">
     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
 </button>
 
-<!-- Nạp script module -->
 <script type="module" src="./js/main.js"></script>
-
 </body>
 </html>
