@@ -2,7 +2,9 @@
 // js/main.js
 import { initToTop } from "./nav.js";
 import { initTheme } from "./theme.js";
+import { initFaq } from "./faq.js";
 
 // Khởi chạy tất cả module
 initTheme();
 initToTop();
+initFaq();
