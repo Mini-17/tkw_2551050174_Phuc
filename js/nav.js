@@ -1,4 +1,33 @@
-// js/nav.js
+export function initNav() {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (!menuBtn || !mobileMenu) return;
+
+    menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+            mobileMenu.classList.add("hidden");
+        }
+    });
+}
+
+export function initHeaderOnScroll() {
+    const header = document.querySelector(".nav-header, nav");
+    if (!header) return;
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 20) {
+            header.classList.add("shadow-lg", "backdrop-blur-lg");
+        } else {
+            header.classList.remove("shadow-lg", "backdrop-blur-lg");
+        }
+    });
+}
+
 export function initToTop() {
     const toTopBtn = document.getElementById("back-to-top");
     if (!toTopBtn) return; // Thoát nếu trang không có nút này
