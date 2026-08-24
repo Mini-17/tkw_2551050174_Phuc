@@ -13,7 +13,7 @@ Website giới thiệu giải pháp SaaS chuyên dụng dành cho các tiệm s�
 - **Trang chủ (Overview):** [https://mini-17.github.io/tkw_2551050174_Phuc/]
 - **Trang Bảng Giá (Pricing):** [https://mini-17.github.io/tkw_2551050174_Phuc/pricing.html]
 - **Trang Liên Hệ (Contact):** [https://mini-17.github.io/tkw_2551050174_Phuc/contact.html]
-**Trang Dữ Liệu (App):** [https://mini-17.github.io/tkw_2551050174_Phuc/app.html]
+- **Trang Dữ Liệu (App):** [https://mini-17.github.io/tkw_2551050174_Phuc/app.html]
 
 # Thông tin
 
