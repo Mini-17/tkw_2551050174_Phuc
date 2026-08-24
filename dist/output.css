@@ -349,6 +349,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .inline-grid {
+    display: inline-grid;
+  }
   .table {
     display: table;
   }
@@ -372,6 +375,9 @@
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
@@ -426,6 +432,9 @@
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
   .w-9 {
     width: calc(var(--spacing) * 9);
@@ -1253,6 +1262,9 @@
       --tw-scale-z: 110%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
+    .hover\:border-red-500:hover {
+      border-color: var(--color-red-500);
+    }
     .hover\:border-slate-500:hover {
       border-color: var(--color-slate-500);
     }
@@ -1262,8 +1274,19 @@
     .hover\:bg-slate-700:hover {
       background-color: var(--color-slate-700);
     }
+    .hover\:bg-slate-800\/40:hover {
+      background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 40%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-slate-800\/40:hover {
+        background-color: color-mix(in oklab, var(--color-slate-800) 40%, transparent);
+      }
+    }
     .hover\:text-accent-500:hover {
       color: var(--color-accent-500);
+    }
+    .hover\:text-red-400:hover {
+      color: var(--color-red-400);
     }
     .hover\:text-white:hover {
       color: var(--color-white);

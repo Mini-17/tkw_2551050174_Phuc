@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - GaraMaster</title>
-    <!-- Link file CSS đã biên dịch từ Tailwind -->
+    <title>List Trader - GaraMaster</title>
+
     <link rel="stylesheet" href="./dist/output.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +14,29 @@
 <body class="bg-surface text-ink font-body antialiased selection:bg-accent-500 selection:text-white min-h-screen flex flex-col overflow-x-hidden
             dark:bg-surface-invert dark:text-ink-invert transition-colors duration-300">
 
-<!-- KHUNG QUẢN LÝ BẢN GHI (STATE -> RENDER) -->
+<!-- KHUNG QUẢN LÝ BẢN GHI -->
 <section id="records-app" class="py-12 border-b border-line">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-6">
-        
+
+        <template id="row-template">
+    <tr class="hover:bg-slate-800/40 transition-colors">
+        <td data-cell="id" class="font-mono text-xs text-muted py-3 px-2"></td>
+        <td data-cell="trader" class="font-medium text-ink py-3 px-2"></td>
+        <td data-cell="category" class="py-3 px-2 text-slate-300"></td>
+        <td data-cell="weight" data-num class="py-3 px-2 text-slate-300"></td>
+        <td data-cell="amount" data-num class="py-3 px-2 font-semibold text-accent-500"></td>
+        <td data-cell="date" class="whitespace-nowrap py-3 px-2 text-muted"></td>
+        <td class="py-3 px-2"><span data-cell="status" data-status class="px-2 py-0.5 rounded text-[11px] font-medium"></span></td>
+        <td class="text-right py-3 px-2">
+            <button type="button" data-action="delete" class="inline-grid h-8 w-8 place-items-center rounded border border-line text-muted transition-colors hover:border-red-500 hover:text-red-400">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+                </svg>
+            </button>
+        </td>
+    </tr>
+</template>
+
         <!-- Thanh điều khiển: Tìm kiếm & Bộ lọc -->
         <div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-card bg-surface-panel/40 border border-line">
             <div class="flex flex-wrap items-center gap-3 grow">
