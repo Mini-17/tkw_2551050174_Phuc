@@ -7,12 +7,26 @@
 @theme {
   /* Màu sắc giao diện web */
   --color-brand-600: #1e3a8a;   /* Xanh Navy */
+
+  
+  --color-accent-400: #fb923c;  /* Cam nhạt: nút chính, liên kết */
   --color-accent-500: #f97316;  /* Cam nhấn: sửa chữa, cảnh báo */
   --color-accent-600: #ea580c;  /* Cam đậm hơn cho hiệu ứng hover */
+  --color-accent-700: #c2410c;  /* Cam đậm hơn nữa cho hiệu ứng hover */
+
+
   --color-ink: #ffffff;         /* Màu chữ chính: Trắng */
   --color-muted: #d5dae2;       /* Màu chữ phụ: Xám */
   --color-surface: #5083a7;     /* Màu nền trang: Xám nhẹ */
   --color-line: #e2e8f0;        /* Màu đường viền */
+
+
+  /* Cặp màu Dark Mode (Hậu tố -invert) */
+  --color-ink-invert: #eaf2ee;         /* Chữ sáng dịu mắt */
+  --color-muted-invert: #ecf0f3;       /* Chữ phụ tối */
+  --color-surface-invert: #0f172a;     /* Nền tối: Deep Slate */
+  --color-line-invert: #24403a;        /* Viền đậm */
+  --color-line-invert-light: #1e293b;  /* Viền nhạt hơn cho nền tối */
 
   /* Phông chữ */
   --font-display: "Bebas Neue", system-ui, sans-serif;
@@ -40,6 +54,12 @@
 }
 
 @layer components {
+
+  .card {
+    @apply rounded-card border border-line bg-surface p-6 text-ink 
+           dark:border-line-invert dark:bg-surface-invert dark:text-ink-invert;
+  }
+
   /* Layout & Sections General */
   .section {
     @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
@@ -80,12 +100,14 @@
   }
 
   /* Hero & Feature Card */
-  .highlight-card {
-    @apply p-3.5 rounded-card bg-slate-900/80 border border-slate-800 text-left;
+ .highlight-card {
+    @apply p-3.5 rounded-card bg-surface/60 border border-line text-left transition-colors 
+           dark:bg-surface-invert/80 dark:border-line-invert-light;
   }
 
   .stat-card {
-    @apply p-4 rounded-card bg-slate-900/90 border border-slate-800;
+    @apply p-4 rounded-card bg-surface/80 border border-line transition-colors 
+           dark:bg-slate-900/90 dark:border-line-invert-light;
   }
 
   .progress-bar-bg {
@@ -103,7 +125,7 @@
   }
 
   .glass-card {
-    @apply bg-slate-800/70 backdrop-blur-md border border-white/[0.08];
+    @apply bg-slate-800/70 backdrop-blur-md border border-white/8;
   }
 
   .glass-card-hover {
@@ -192,5 +214,17 @@
     .T-KPIs{
       @apply text-xs text-muted mb-1;
     }
+
+    /*PRICING SECTION*/
+    .Types-Compation{
+      @apply py-3 px-4 font-medium text-ink dark:text-ink-invert;
+    }
+
+    .Compation-Text{
+      @apply py-3 px-4 text-center;
+    }
+
+
+
 
 }
