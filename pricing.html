@@ -37,33 +37,41 @@
 </header>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="sticky top-0 z-50 glass-nav border-b border-line/20 dark:border-line-invert-light transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3 group">
+<nav class="sticky top-0 z-50 glass-nav border-b border-slate-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 shrink-0 group">
             <div class="w-10 h-10 rounded-card bg-linear-to-br from-brand-600 to-accent-500 flex items-center justify-center font-display text-2xl font-bold tracking-wider text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
                 A
             </div>
             <div>
                 <span class="font-display text-2xl tracking-wider text-white block leading-none">AUTOCARE <span class="text-accent-500">SaaS</span></span>
-                <span class="text-[10px] tracking-widest text-muted dark:text-muted-invert uppercase font-semibold">GaraMaster System</span>
+                <span class="text-[10px] tracking-widest text-muted uppercase font-semibold">GaraMaster System</span>
             </div>
         </a>
 
-        <div class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-300">
-            <a href="index.html#overview" class="nav_desktop_link">Trang Chủ</a>
-            <a href="index.html#target" class="nav_desktop_link">Đối Tượng</a>
-            <a href="index.html#workflow" class="nav_desktop_link">Quy Trình</a>
-            <a href="pricing.html" class="nav_desktop_link text-accent-500 font-bold">Bảng Giá SaaS</a>
-            <a href="contact.html" class="nav_desktop_link">Liên Hệ</a>
+        <!-- Desktop Navigation Links (Dùng whitespace-nowrap và khoảng cách co giãn tự động) -->
+        <div class="hidden xl:flex items-center gap-4 2xl:gap-6 text-sm font-medium text-slate-300">
+            <a href="index.html#overview" class="nav_desktop_link whitespace-nowrap text-accent-500 font-bold">Tổng Quan</a>
+            <a href="index.html#target" class="nav_desktop_link whitespace-nowrap">Đối Tượng</a>
+            <a href="index.html#workflow" class="nav_desktop_link whitespace-nowrap">Quy Trình</a>
+            <a href="index.html#tracker" class="nav_desktop_link whitespace-nowrap">Tra Cứu Xe</a>
+            <a href="pricing.html" class="nav_desktop_link whitespace-nowrap">Bảng Giá</a>
+            <a href="contact.html" class="nav_desktop_link whitespace-nowrap">Liên Hệ</a>
+            <a href="app.html" class="nav_desktop_link whitespace-nowrap text-accent-400 font-semibold">Dữ Liệu App</a>
         </div>
 
-        <div class="flex items-center gap-3">
-            <div class="hidden sm:flex items-center gap-3">
-                <a href="index.html#tracker" class="btn btn-outline px-4 py-2 text-xs">Tra Cứu Trực Tuyến</a>
-            </div>
+        <!-- Action Buttons & Controls -->
+        <div class="flex items-center gap-2.5 shrink-0">
+            <a href="index.html#tracker" class="hidden sm:inline-block px-3.5 py-2 rounded-card border border-slate-700 hover:border-slate-500 text-xs font-semibold text-slate-200 hover:text-white transition-all bg-slate-800/50 whitespace-nowrap">
+                Tra Cứu Trực Tuyến
+            </a>
+            <a href="contact.html" class="hidden sm:inline-block px-4 py-2 rounded-card bg-accent-500 hover:bg-accent-600 text-xs font-bold text-white shadow-lg shadow-accent-500/25 transition-all hover:scale-105 whitespace-nowrap">
+                Dùng Thử Miễn Phí
+            </a>
 
-            <!-- Dark-Mode Button -->
-            <button id="theme-toggle" class="p-2.5 rounded-card border border-line/30 bg-slate-800/50 text-slate-300 hover:text-accent-500 dark:border-line-invert-light transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent-500" aria-label="Chuyển đổi giao diện Sáng / Tối">
+            <!-- Dark-Mode Toggle -->
+            <button id="theme-toggle" class="p-2 rounded-card border border-slate-700 bg-slate-800/50 text-slate-300 hover:text-accent-500 hover:border-slate-500 transition-all cursor-pointer focus:outline-none" aria-label="Chuyển đổi giao diện Sáng / Tối">
                 <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                 </svg>
@@ -72,24 +80,28 @@
                 </svg>
             </button>
 
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="xl:hidden p-2 text-slate-300 hover:text-white focus:outline-none cursor-pointer">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="xl:hidden p-2 text-slate-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
             </button>
         </div>
     </div>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Drawer -->
     <div id="mobile-menu" class="hidden xl:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-3">
-        <a href="index.html#overview" class="nav_mobile_link">Trang Chủ</a>
-        <a href="pricing.html" class="nav_mobile_link text-accent-500 font-bold">Bảng Giá SaaS</a>
+        <a href="index.html#overview" class="nav_mobile_link text-accent-500 font-bold">Tổng Quan Hệ Thống</a>
+        <a href="index.html#target" class="nav_mobile_link">Đối Tượng</a>
+        <a href="index.html#workflow" class="nav_mobile_link">Quy Trình</a>
+        <a href="index.html#tracker" class="nav_mobile_link">Tra Cứu Tiến Độ Trực Tuyến</a>
+        <a href="pricing.html" class="nav_mobile_link">Bảng Giá SaaS</a>
         <a href="contact.html" class="nav_mobile_link">Liên Hệ Tư Vấn</a>
-        <div class="pt-4">
-            <a href="index.html#tracker" class="btn btn-outline w-full text-center">Tra Cứu Trực Tuyến</a>
+        <a href="app.html" class="nav_mobile_link text-accent-400 font-semibold">Quản Lý Dữ Liệu</a>
+        <div class="pt-4 flex flex-col gap-2 sm:hidden">
+            <a href="index.html#tracker" class="w-full text-center py-2.5 rounded-card border border-slate-700 text-xs font-semibold text-slate-200">Tra Cứu Trực Tuyến</a>
+            <a href="contact.html" class="w-full text-center py-2.5 rounded-card bg-accent-500 text-xs font-bold text-white">Dùng Thử Miễn Phí</a>
         </div>
     </div>
 </nav>
-
 <!-- ================= MAIN CONTENT ================= -->
 <main class="grow py-12 sm:py-20 border-b border-line/20 dark:border-line-invert">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
